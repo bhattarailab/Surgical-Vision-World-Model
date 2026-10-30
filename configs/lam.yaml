@@ -1,0 +1,19 @@
+model:
+  num_heads: 8
+  d_model: 512
+  encoder:
+    num_layers: 12
+  decoder:
+    num_layers: 12
+  vae:
+    beta: 0.0002
+    latent_dim: 32
+data:
+  video_shape:
+    T: 8
+    H: 160
+    W: 240
+  patch_shape:
+    H: 16
+    W: 16
+  stride: 18 # 3.33 fps

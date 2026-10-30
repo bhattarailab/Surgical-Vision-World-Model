@@ -1,0 +1,30 @@
+model:
+  num_heads: 8
+  d_model: 512
+  encoder:
+    num_layers: 12
+  decoder:
+    num_layers: 12
+  vae:
+    beta: 0.0002
+    latent_dim: 32
+  first_frame_only: True
+data:
+  dataset: 'pitvis'
+  video_shape:
+    T: 8
+    H: 224
+    W: 224
+  patch_shape:
+    H: 16
+    W: 16
+  stride: 6 # 4 fps
+train:
+  learning_rate: 0.00002
+  weight_decay: 0.01
+  batch_size_per_gpu: 24
+  gradient_accumulation_steps: 1
+  epochs: 300
+  max_grad_norm: 1
+  viz_keys: ['gt_image', 'image']
+  resume_from_checkpoint: outputs/action/pitvis/last_run/latest

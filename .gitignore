@@ -1,0 +1,23 @@
+# extensions
+*.egg-info
+*.py[cod]
+
+# directories
+.venv
+/checkpoints
+/dist
+/outputs
+/build
+/src
+/.vscode
+lightning_logs/
+logs/
+**/.ipynb_checkpoints
+**/__pycache__/
+
+**/*.log
+**/*.ipynb
+**/*.safetensors
+
+SurgVLP/
+cmmd_pytorch/

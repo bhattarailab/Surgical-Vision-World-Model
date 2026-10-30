@@ -1,0 +1,30 @@
+model:
+  num_heads: 8
+  d_model: 512
+  encoder:
+    num_layers: 12
+  decoder:
+    num_layers: 12
+  vq_vae:
+    codebook_dim: 32
+    codebook_size: 16
+    commitment_weight: 2
+    decay: 0.8
+    threshold_ema_dead_code: 2
+data:
+  video_shape:
+    T: 8
+    H: 160
+    W: 240
+  patch_shape:
+    H: 16
+    W: 16
+  stride: 18 # 3.33 fps for SurgToolLoc
+train:
+  learning_rate: 0.00001
+  weight_decay: 0.01
+  batch_size_per_gpu: 12
+  gradient_accumulation_steps: 4
+  epochs: 200
+  max_grad_norm: 1
+  viz_keys: ['gt_image', 'image']
