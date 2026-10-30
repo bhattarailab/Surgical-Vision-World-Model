@@ -67,7 +67,7 @@ To reproduce the results of the paper, you can run `scripts/sample.sh` with the 
 ## Evaluation
 Pass the argument `--compute_metrics` in `sample.py` to calcuate metrics after sampling. You will need to install the following additional dependency.
 #### CDFVD 
-- Install the library using the command: `pip install cd-fvd`. Please refer to the [official-repo](https://huggingface.co/mithochiya/SurgTransfer/tree/main) if you encounter any problems.
+- Install the library using the command: `pip install cd-fvd`. Please refer to the [official-repo](https://github.com/songweige/content-debiased-fvd) if you encounter any problems.
 - Download the model checkpoints [vit_g_hybrid_pt_1200e_ssv2_ft.pth](https://huggingface.co/OpenGVLab/VideoMAE2/blob/c0aa78ff1c576fbfc18982a96a4ce9905ee8587d/mae-g/vit_g_hybrid_pt_1200e_ssv2_ft.pth) trained on SSv2 dataset.
 
 Frame-level metrics are adapted from the pytorch-image-quality [library](https://github.com/photosynthesis-team/piq).
