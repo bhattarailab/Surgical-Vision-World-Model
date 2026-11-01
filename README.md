@@ -8,7 +8,7 @@
   <br>
   <img src="assets/mmll.png" alt="Multi-Modal Learning Lab" width="300">
   <br>
-  <a href="https://naamii.org/research/research-groups/mmll-b-bhattarai-multi-modal-lab">Multi-Modal Learning Lab</a>
+  <a href="https://sites.google.com/view/bbinod/team">Multi-Modal Learning Lab</a>
 </div>
 
 \
